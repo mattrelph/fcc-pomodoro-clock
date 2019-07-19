@@ -1,0 +1,99 @@
+body {
+  background-color: White;
+  margin-top: 15px;
+  font-family: "Courier", "monospace";
+
+}
+
+footer {
+  margin-top: 65px;
+  background-color: Black;
+  color: White;
+  height: 50px;
+  width: 100%;
+}
+
+
+.controls{
+	font-size: 5em;
+	color: Black;
+	display: inline-block;
+}
+
+.controls:hover{
+	font-size: 4.9em;
+}
+
+.controls:active{
+	font-size: 3.5em;
+}
+
+
+.adjust{
+	display: inline-block;
+}
+#description{
+	margin-top: 100px;
+
+}
+
+#adjustRow{
+	margin-top: 10px;
+}
+
+#controlsRow{
+	margin-top: 50px;
+}
+
+#workBar{
+	background-color: Green;	
+	color: White;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#breakBar{
+	background-color: Blue;
+	color: White;
+	height: 50px;
+	width: 20%;	
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*float: left;*/
+	z-index: 1;	
+}
+
+#timerWorkBar{
+	background-color: LightGreen;	
+	color: White;
+	height: 50px;
+	width: 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;		
+}
+
+#timerBreakBar{
+	background-color: LightBlue;
+	color: White;
+	height: 50px;
+	width: 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#workRow{
+	margin-bottom: 27px;
+}
+
+#breakRow{
+	margin-top: 27px;
+}

@@ -1,0 +1,110 @@
+<div  class="container-fluid text-center">
+	<div id="title" class="row">
+		<div class="col-xs-2 text-center">
+		</div>
+		<div class="col-xs-8 text-center">
+			<span><h1>Pomodoro Clock</h1></span><br/>
+			<span id="clock"><h2>25:00</h2></span>
+		</div>
+		<div class="col-xs-2 text-center">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-2 text-center">
+		</div>
+		<div id="workRow"  class="col-xs-8 text-center">
+			<div id="timerWorkBar" class="float-left">
+				<span></span>
+			</div>
+			<div id="workBar" class="float-left">
+				<span> </span>
+			</div>
+		</div>
+		<div class="col-xs-2 text-center">
+		</div>			
+		
+	</div>
+	<div id="breakRow" class="row">
+		<div class="col-xs-2 text-center">
+		</div>
+		<div class="col-xs-8 text-center">			
+			<div id="timerBreakBar" class="float-left">
+				<span> </span>
+			</div>
+			<div id="breakBar" class="float-left">
+				<span> </span>
+			</div>
+		</div>
+		<div class="col-xs-2 text-center">
+		</div>
+	</div>	
+	<div id="controlsRow" class="row">
+		<div class="col-xs-2 text-center">
+		</div>
+		<div class="col-xs-8 text-center">
+			<span><i id="playIcon" class="controls fa fa-play-circle-o" onclick="play()" aria-hidden="true"></i> <i id="pauseIcon" class="controls fa fa-pause-circle-o" onclick="pause()" aria-hidden="true"></i>  <i id="stopIcon" class="controls fa fa-stop-circle-o" onclick="stop()" aria-hidden="true"></i> <i id="resetIcon" class="controls fa fa-refresh" onclick="resetAll()"  aria-hidden="true"></i></span>
+		</div>
+		<div class="col-xs-2 text-center">
+		</div>
+	</div>	
+	<div id="adjustRow" class="row">
+		<div class="col-xs-1 text-center">
+		</div>
+		<div class="col-xs-4 text-center">
+			<div onclick="adjustWorkLength(1)"  class="controls"><span >+</span></div>
+			<div class="adjust text-success">
+				<span><strong>Work Session Length</strong></span><br/>
+				<span id="workMinutes"><h4>25 minutes</h4></span>
+			</div>
+			<div onclick="adjustWorkLength(-1)" class="controls"><span >-</span></div>
+		</div>
+		<div class="col-xs-2 text-center">
+		</div>
+		<div class="col-xs-4 text-center">
+			<div onclick="adjustBreakLength(1)"  class="controls"><span >+</span></div>
+			<div class="adjust text-info">
+				<span><strong>Break Length</strong></span><br/>
+				<span id="breakMinutes" ><h4>5 minutes</h4></span>
+			</div>
+			<div onclick="adjustBreakLength(-1)" class="controls"><span >-</span></div>
+		</div>		
+		<div class="col-xs-1 text-center">
+		</div>
+	</div>
+	<!--<div id="break" class="row">
+		<div class="col-xs-2 text-center">
+		</div>
+		<div class="col-xs-8 text-center">
+			<div onclick="adjustBreakLength(1)"  class="controls"><span >+</span></div>
+			<div class="adjust text-info">
+				<span><strong>Break Length</strong></span><br/>
+				<span id="breakMinutes" ><h4>5 minutes</h4></span>
+			</div>
+			<div onclick="adjustBreakLength(-1)" class="controls"><span >-</span></div>
+		</div>
+		<div class="col-xs-2 text-center">
+		</div>
+	</div>-->			
+	<div id="description" class="row">
+		<div class="col-xs-2 text-center">
+		</div>
+		<div class="col-xs-8 text-left">
+			<span><strong>What is a pomodoro?</strong><br/><em>According to <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Wikipedia</a>, the Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks.</em></span>
+		</div>
+		<div class="col-xs-2 text-center">
+		</div>
+	</div>	
+	<!--<div class="row">
+		<div class="col-xs-2 text-center">
+		</div>
+		<div class="col-xs-4 text-center">
+		</div>
+		<div class="col-xs-4 text-center">
+		</div>
+	</div>
+	-->
+</div>
+<footer>
+  <p class="small text-center">Coded by Matthew Relph</p>
+</footer>	
+
